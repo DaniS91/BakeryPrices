@@ -7,5 +7,11 @@ using System;
 
 namespace Pricer.Models
 {
- 
+ public class Bread
+ {
+  public static int BreadPrice(int items)
+  {
+    return 0;
+  }
+ }
 }

@@ -9,6 +9,11 @@ namespace Pricer.TestTools
   public class PriceTests
   {
     [TestMethod]
-    
+    public void BreadPrice_ReturnsBaselineBreadPrice_Int()
+    {
+      int items = 1;
+      int result = Bread.BreadPrice(items);
+      Assert.AreEqual(5, result);
+    }
   }
 }
