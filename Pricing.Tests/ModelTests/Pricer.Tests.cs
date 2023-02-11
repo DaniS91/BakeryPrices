@@ -29,5 +29,12 @@ namespace Pricer.TestTools
       int result = Pastry.PastryPrice(items);
       Assert.AreEqual(2, result);
     }
+    [TestMethod]
+    public void PastryPrice_ReturnsPastryPriceWithDeal_Int()
+    {
+      int items = 8;
+      int result = Pastry.PastryPrice(items);
+      Assert.AreEqual(12, result);
+    }
   }
 }
