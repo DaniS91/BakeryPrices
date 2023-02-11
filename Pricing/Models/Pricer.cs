@@ -9,9 +9,10 @@ namespace Pricer.Models
 {
  public class Bread
  {
+  private static int loafPrice { get; set; } = 5;
   public static int BreadPrice(int items)
   {
-    return (items * 5) - ((Convert.ToInt32(Math.Floor(items/3.0)))*5);
+    return (items * loafPrice) - ((Convert.ToInt32(Math.Floor(items / 3.0))) * loafPrice);
   }
  }
 }
