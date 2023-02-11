@@ -24,4 +24,16 @@ namespace Pricer.Models
       return (items * pastryUnitPrice) - ((Convert.ToInt32(Math.Floor(items / 4.0))) * pastryUnitPrice);
     }
   }
+
+  public class CustomerOrder
+  {
+    public static string OrderTotal(int breadItems, int pastryItems)
+    {
+      if (breadItems < 0 || breadItems > 40)
+      {
+        return "Please enter a valid quantity.";
+      }
+    }
+  }
+
 }
