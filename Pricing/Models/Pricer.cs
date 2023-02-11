@@ -11,7 +11,7 @@ namespace Pricer.Models
  {
   public static int BreadPrice(int items)
   {
-    return 0;
+    return items * 5;
   }
  }
 }
