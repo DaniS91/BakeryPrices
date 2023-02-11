@@ -21,7 +21,7 @@ namespace Pricer.Models
     private static int pastryUnitPrice { get; set; } = 2;
     public static int PastryPrice(int items)
     {
-      return 0;
+      return items * pastryUnitPrice;
     }
   }
 }
