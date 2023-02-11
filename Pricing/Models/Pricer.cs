@@ -21,7 +21,7 @@ namespace Pricer.Models
     private static int pastryUnitPrice { get; set; } = 2;
     public static int PastryPrice(int items)
     {
-      return items * pastryUnitPrice;
+      return (items * pastryUnitPrice) - ((Convert.ToInt32(Math.Floor(items / 4.0))) * pastryUnitPrice);
     }
   }
 }
