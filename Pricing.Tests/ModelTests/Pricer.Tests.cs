@@ -15,5 +15,12 @@ namespace Pricer.TestTools
       int result = Bread.BreadPrice(items);
       Assert.AreEqual(5, result);
     }
+    [TestMethod]
+    public void BreadPrice_ReturnsBreadPriceWithDeal_Int()
+    {
+      int items = 27;
+      int result = Bread.BreadPrice(items);
+      Assert.AreEqual(90, result);
+    }
   }
 }
