@@ -11,7 +11,7 @@ namespace Pricer.Models
  {
   public static int BreadPrice(int items)
   {
-    return items * 5;
+    return (items * 5) - ((Convert.ToInt32(Math.Floor(items/3.0)))*5);
   }
  }
 }
