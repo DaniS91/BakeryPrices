@@ -18,11 +18,14 @@ namespace Pricing
       Console.WriteLine("Pastry of the Day ($2 per item): Guava & Cream Cheese Danish");
       Console.WriteLine("Bread Deal: Buy 2 get 1 free || Pastry Deal: Buy 3 get 1 free");
       Console.WriteLine("Please note: This is a family-owned, artisan bakery. Please limit orders amounts to whole items between 0-40 per type.");
-      Console.WriteLine("How many bread loafs would you like to order today?");
+      Console.WriteLine("How many bread loaves would you like to order today?");
       int breadItems = Int32.Parse(Console.ReadLine());
       Console.WriteLine("How many pastries would you like to order today?");
       int pastryItems = Int32.Parse(Console.ReadLine());
       Console.WriteLine(CustomerOrder.OrderTotal(breadItems, pastryItems));
+      Console.WriteLine("Please type your name and number to place order:");
+      string customerInfo = Console.ReadLine();
+      Console.WriteLine("Thank you for your order! We will contact you when your items are ready for pickup!");
     }
   }
 }
