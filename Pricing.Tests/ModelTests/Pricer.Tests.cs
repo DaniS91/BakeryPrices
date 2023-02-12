@@ -36,5 +36,13 @@ namespace Pricer.TestTools
       int result = Pastry.PastryPrice(items);
       Assert.AreEqual(12, result);
     }
+    [TestMethod]
+    public void OrderTotal_HandlesBreadItemErrors_String()
+    {
+      int breadItems = 6;
+      int pastryItems = 8;
+      string result = CustomerOrder.OrderTotal(breadItems, pastryItems);
+      Assert.AreEqual(("Your Order Total: $" + "32"), result);
+    }
   }
 }
