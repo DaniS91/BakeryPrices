@@ -22,7 +22,7 @@ namespace Pricing
       int breadItems = Int32.Parse(Console.ReadLine());
       Console.WriteLine("How many pastries would you like to order today?");
       int pastryItems = Int32.Parse(Console.ReadLine());
-      
+      Console.WriteLine(CustomerOrder.OrderTotal(breadItems, pastryItems));
     }
   }
 }
