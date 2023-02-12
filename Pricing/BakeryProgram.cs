@@ -22,10 +22,23 @@ namespace Pricing
       int breadItems = Int32.Parse(Console.ReadLine());
       Console.WriteLine("How many pastries would you like to order today?");
       int pastryItems = Int32.Parse(Console.ReadLine());
+      if (breadItems < 0 || pastryItems < 0)
+      {
+        Console.WriteLine("Please restart with valid quantities or place a special order");
+        Environment.Exit(0);
+      }
+      if (breadItems > 40 || pastryItems > 40)
+      {
+        Console.WriteLine("Please call our store to place a special order");
+        Environment.Exit(0);
+      }
+      else
+      {
       Console.WriteLine(CustomerOrder.OrderTotal(breadItems, pastryItems));
       Console.WriteLine("Please type your name and number to place order:");
       string customerInfo = Console.ReadLine();
       Console.WriteLine("Thank you for your order! We will contact you when your items are ready for pickup!");
+      }
     }
   }
 }
