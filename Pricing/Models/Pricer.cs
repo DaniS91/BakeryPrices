@@ -29,10 +29,9 @@ namespace Pricer.Models
   {
     public static string OrderTotal(int breadItems, int pastryItems)
     {
-      if (breadItems < 0 || breadItems > 40)
-      {
-        return "Please enter a valid quantity.";
-      }
+      int totalPrice = (Bread.BreadPrice(breadItems)) + (Pastry.PastryPrice(pastryItems));
+      string stringPrice = totalPrice.ToString();
+      return "Your Order Total: $" + stringPrice; 
     }
   }
 
